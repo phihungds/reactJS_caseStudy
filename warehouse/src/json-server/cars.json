@@ -1,0 +1,59 @@
+{
+    "cars" :[
+        {
+            "id": 1,
+            "brand": "Hyundai",
+            "name": "Santafe",
+            "price" : "40.535",
+            "description" : "",
+            "inventory" : 213,
+            "image" : ""
+          },
+          {
+            "id": 2,
+            "brand": "Mercedes",
+            "name": "C300",
+            "price" : "55.700",
+            "description" : "",
+            "inventory" : 56,
+            "image" : ""
+          },
+          {
+            "id": 3,
+            "brand": "Porsche",
+            "name": "Cayenne",
+            "price" : "77,500",
+            "description" : "",
+            "inventory" : 18,
+            "image" : ""
+          },
+          {
+            "id": 4,
+            "brand": "Vinfast",
+            "name": "VF9",
+            "price" : "56.000",
+            "description" : "",
+            "inventory" : 500,
+            "image" : ""
+          },
+          {
+            "id": 5,
+            "brand": "Russia",
+            "name": "T-90",
+            "price" : "6.000.000",
+            "description" : "",
+            "inventory" : 2,
+            "image" : ""
+          },
+          {
+            "id": 6,
+            "brand": "Tesla",
+            "name": "Model X",
+            "price" : "89.990",
+            "description" : "",
+            "inventory" : 9,
+            "image" : ""
+          }
+    ]
+    
+}
