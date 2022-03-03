@@ -7,8 +7,8 @@
             "price" : "40.535",
             "description" : "",
             "inventory" : 213,
-            "image" : ""
-          },
+            "slogan": ""
+        },
           {
             "id": 2,
             "brand": "Mercedes",
@@ -16,7 +16,7 @@
             "price" : "55.700",
             "description" : "",
             "inventory" : 56,
-            "image" : ""
+            "slogan": ""
           },
           {
             "id": 3,
@@ -25,16 +25,16 @@
             "price" : "77,500",
             "description" : "",
             "inventory" : 18,
-            "image" : ""
+            "slogan": ""
           },
           {
             "id": 4,
             "brand": "Vinfast",
-            "name": "VF9",
+            "name": "VF7",
             "price" : "56.000",
             "description" : "",
             "inventory" : 500,
-            "image" : ""
+            "slogan": ""
           },
           {
             "id": 5,
@@ -43,7 +43,7 @@
             "price" : "6.000.000",
             "description" : "",
             "inventory" : 2,
-            "image" : ""
+            "slogan": "Gates is'nt a fear anymore"
           },
           {
             "id": 6,
@@ -52,7 +52,7 @@
             "price" : "89.990",
             "description" : "",
             "inventory" : 9,
-            "image" : ""
+            "slogan": ""
           }
     ]
     
