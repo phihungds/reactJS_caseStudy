@@ -10,6 +10,7 @@ import NewCar from "../pages/NewCar";
 import RepairsChild from "../pages/Repair";
 import ManageCars from "../pages/ManageCars";
 import EditCar from "../pages/EditCar";
+import ScheduleRepair from "../pages/ScheduleRepair"
 
 export default function Index () {
     return (
@@ -29,6 +30,7 @@ export default function Index () {
                 
                 <Route path="/manager/repairs" element={<RepairsChild/>} />  
               <Route path={`/ecar/:carId`} element={<EditCar/>} /> 
+              <Route path="/schedule-repair" element={<ScheduleRepair/>} />
             </Routes>
             </div>
         </BrowserRouter>

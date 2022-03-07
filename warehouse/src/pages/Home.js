@@ -15,6 +15,9 @@ export default function Home () {
   const goToAddPage = () => {
     navigate('/car/add')
   }
+  const goToBookPage = () => {
+    navigate('/schedule-repair')
+  }
     return (
       <Layout>
         <ThemeProvider theme={theme}>
@@ -47,8 +50,8 @@ export default function Home () {
               spacing={2}
               justifyContent="center"
             >
-              <Button onClick={goToAddPage} variant="contained"sx={{ bgcolor: '#002884' }} >Order new car</Button>
-              <Button variant="contained" > <ConstructionIcon/>Schedule  repair</Button>
+              <Button onClick={goToAddPage} variant="contained"sx={{ bgcolor: '#002884' }} ><CarRentalIcon/> Order new car</Button>
+              <Button onClick={goToBookPage} variant="contained" > <ConstructionIcon/>Book car repair appointment</Button>
             </Stack>
             
           </Container>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { AppBar, Button, CssBaseline, Stack, Box, Toolbar, Typography, Container, Grid, Paper, CardMedia, ListItem, List, ListItemIcon, ListItemText } from '@mui/material';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Layout from './Layout';
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import carDetailbg from '../photos/car-details-bg.jpg'
@@ -9,7 +9,9 @@ import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import Swal from 'sweetalert2';
 
 
+
 export default function CarInfo() {
+    const navigate = useNavigate()
     const { carId } = useParams()
     const [car, setCar] = useState({})
     const theme = createTheme();
@@ -120,10 +122,12 @@ export default function CarInfo() {
                                                 
                                                 if (result.isConfirmed) {
                                                   Swal.fire('Thank you!', '', 'success')
+                                                  navigate('/home')
                                                 } else if (result.isDenied) {
                                                   Swal.fire('Maybe next time', '', 'info')
                                                 }
                                               })
+                                              
                                          }}
                                         >
                                             Purchase
