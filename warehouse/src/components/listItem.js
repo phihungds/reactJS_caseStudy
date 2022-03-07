@@ -3,45 +3,49 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
-import DashboardIcon from '@mui/icons-material/Dashboard';
+import ConstructionIcon from '@mui/icons-material/Construction';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import PeopleIcon from '@mui/icons-material/People';
+import HomeIcon from '@mui/icons-material/Home';
 import BarChartIcon from '@mui/icons-material/BarChart';
-import LayersIcon from '@mui/icons-material/Layers';
+import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import CarRentalIcon from '@mui/icons-material/CarRental';
 
 export const mainListItems = (
   <React.Fragment>
     <ListItemButton>
       <ListItemIcon>
-        <DashboardIcon />
+        <HomeIcon sx={{ fontSize: 30 }}/>
       </ListItemIcon>
-      <ListItemText primary="Dashboard" />
+      <ListItemText primary="Homepage" />
+    </ListItemButton>
+
+    <ListItemButton>
+      <ListItemIcon>
+        <DirectionsCarIcon sx={{ fontSize: 30 }}/>
+      </ListItemIcon>
+      <ListItemText primary="Warehouse" />
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
-        <ShoppingCartIcon />
+        <ConstructionIcon sx={{ fontSize: 30 }}/>
       </ListItemIcon>
-      <ListItemText primary="Orders" />
+      <ListItemText primary="Repair schedule" />
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
-        <PeopleIcon />
+        <ShoppingCartIcon sx={{ fontSize: 30 }}/>
       </ListItemIcon>
-      <ListItemText primary="Customers" />
+      <ListItemText primary="Order new car" />
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
-        <BarChartIcon />
+        <BarChartIcon sx={{ fontSize: 30 }}/>
       </ListItemIcon>
       <ListItemText primary="Reports" />
     </ListItemButton>
-    <ListItemButton>
-      <ListItemIcon>
-        <LayersIcon />
-      </ListItemIcon>
-      <ListItemText primary="Integrations" />
-    </ListItemButton>
+
+    
   </React.Fragment>
 );
 

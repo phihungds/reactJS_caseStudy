@@ -7,7 +7,10 @@ import Service from "../pages/Service"
 import Blog from "../pages/Blog"
 import CarInfo from "../pages/CarInfo";
 import NewCar from "../pages/NewCar";
-import Manager from "../pages/Manage";
+import RepairsChild from "../pages/Repair";
+import ManageCars from "../pages/ManageCars";
+import EditCar from "../pages/EditCar";
+
 export default function Index () {
     return (
         <BrowserRouter>
@@ -22,7 +25,10 @@ export default function Index () {
                <Route path="/blog" element={<Blog />} />  
                <Route exact path={'/car/add'} element={<NewCar/>} />
                 <Route exact path={`/car/:carId`} element={<CarInfo/>} />
-                <Route path="/manager" element={<Manager />} />  
+                <Route path="/manager" element={<ManageCars />} />  
+                
+                <Route path="/manager/repairs" element={<RepairsChild/>} />  
+              <Route path={`/ecar/:carId`} element={<EditCar/>} /> 
             </Routes>
             </div>
         </BrowserRouter>

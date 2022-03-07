@@ -6,6 +6,7 @@ import Layout from './Layout';
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import carDetailbg from '../photos/car-details-bg.jpg'
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
+import Swal from 'sweetalert2';
 
 
 export default function CarInfo() {
@@ -107,6 +108,22 @@ export default function CarInfo() {
                                             fullWidth
                                             variant="contained"
                                             sx={{ mt: 3, mb: 2, bgcolor: '#002884',
+                                         }}
+                                         onClick={()=>{
+                                            Swal.fire({
+                                                title: 'Do you want to save the changes?',
+                                                showDenyButton: true,
+                                                showCancelButton: true,
+                                                confirmButtonText: 'Purchase',
+                                                denyButtonText: `Not yet`,
+                                              }).then((result) => {
+                                                
+                                                if (result.isConfirmed) {
+                                                  Swal.fire('Thank you!', '', 'success')
+                                                } else if (result.isDenied) {
+                                                  Swal.fire('Maybe next time', '', 'info')
+                                                }
+                                              })
                                          }}
                                         >
                                             Purchase

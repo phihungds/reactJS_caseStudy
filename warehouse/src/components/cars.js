@@ -23,7 +23,7 @@ class Cars extends Component {
         axios.get('http://localhost:3001/cars')
           .then((res) => { resolve(res) })
           .catch((err) => { reject(err) })
-      }, 1000);
+      }, 500);
     })
   }
 
