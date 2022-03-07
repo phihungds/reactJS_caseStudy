@@ -5,55 +5,115 @@
             "brand": "Hyundai",
             "name": "Santafe",
             "price" : "40.535",
-            "description" : "",
+            "debut" : "01/01/2021",
+            "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             "inventory" : 213,
-            "slogan": ""
+            "slogan": "New Thinking. New Possibilities."
         },
           {
             "id": 2,
             "brand": "Mercedes",
-            "name": "C300",
-            "price" : "55.700",
-            "description" : "",
-            "inventory" : 56,
-            "slogan": ""
+            "name": "AMG Vision",
+            "price" : "1.500.000",
+            "debut" : "01/01/2021",
+            "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "inventory" : 5,
+            "slogan": "The best or nothing"
           },
           {
             "id": 3,
             "brand": "Porsche",
             "name": "Cayenne",
             "price" : "77,500",
-            "description" : "",
+            "debut" : "01/01/2021",
+            "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             "inventory" : 18,
-            "slogan": ""
+            "slogan": "There is No Substitute"
           },
           {
             "id": 4,
             "brand": "Vinfast",
             "name": "VF7",
             "price" : "56.000",
-            "description" : "",
+            "debut" : "01/01/2021",
+            "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             "inventory" : 500,
-            "slogan": ""
+            "slogan": "Boundless Together"
           },
           {
             "id": 5,
             "brand": "Russia",
             "name": "T-90",
             "price" : "6.000.000",
-            "description" : "",
+            "debut" : "01/01/2021",
+            "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             "inventory" : 2,
-            "slogan": "Gates is'nt a fear anymore"
+            "slogan": "Gates isn't a fear anymore"
           },
           {
             "id": 6,
             "brand": "Tesla",
             "name": "Model X",
             "price" : "89.990",
-            "description" : "",
+            "debut" : "01/01/2021",
+            "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "inventory" : 9,
+            "slogan": "Innovation that excities"
+          },
+          {
+            "id": 7,
+            "brand": "Tesla",
+            "name": "Model X",
+            "price" : "89.990",
+            "debut" : "01/01/2021",
+            "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "inventory" : 9,
+            "slogan": ""
+          },
+          {
+            "id": 8,
+            "brand": "Tesla",
+            "name": "Model X",
+            "price" : "89.990",
+            "debut" : "01/01/2021",
+            "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "inventory" : 9,
+            "slogan": ""
+          },
+          {
+            "id": 9,
+            "brand": "Tesla",
+            "name": "Model X",
+            "price" : "89.990",
+            "debut" : "01/01/2021",
+            "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             "inventory" : 9,
             "slogan": ""
           }
+    ],
+    "repair" : [
+      {
+        "index" : 1,
+        "guest": "Elon Musk",
+        "car" : "Tesla Model X",
+        "catgory" : "replace batteries",
+        "date" : "12/03/2022"
+      },
+      {
+        "index" : 2,
+        "guest": "Ben Affleck",
+        "car" : "Mercedes AMG Vision",
+        "catgory" : "warranty",
+        "date" : "19/03/2022"
+      },
+      {
+        "index" : 3,
+        "guest": "Dom Toretto",
+        "car" : "Dodge Charger",
+        "catgory" : "change color",
+        "date" : "27/03/2022"
+      }
+      
     ]
     
 }

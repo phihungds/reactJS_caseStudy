@@ -1,26 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {AppBar, Button,CssBaseline, Stack, Box, Toolbar, Typography, Container, Grid} from '@mui/material';
 import CarRentalIcon from '@mui/icons-material/CarRental';
-import Copyright from '../components/copyright';
+import ConstructionIcon from '@mui/icons-material/Construction';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import homebg from '../photos/home-bg.jpg';
-import {Link} from 'next/link'
-
+import Link from 'next/link';
+import Layout from './Layout';
 import Cars from '../components/cars';
+import { useNavigate } from 'react-router-dom';
 const theme = createTheme();
 
 export default function Home () {
+  const navigate = useNavigate()
+  const goToAddPage = () => {
+    navigate('/car/add')
+  }
     return (
+      <Layout>
         <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <AppBar position="relative">
-            <Toolbar sx={{bgcolor: '#002884'}}>
-              <CarRentalIcon sx={{ mr: 2, fontSize: 40}} />
-              <Typography variant="h6" color="inherit" noWrap>
-                House of Cars
-              </Typography>
-            </Toolbar>
-          </AppBar>
+          
           <Grid component='main' sx={{
             backgroundImage: `url(${homebg})`,
             backgroundRepeat: 'no-repeat',
@@ -29,12 +27,7 @@ export default function Home () {
           }} >
             
             <Box
-              sx={{
-                
-          
-                pt: 8,
-                pb: 6,
-              }}
+              sx={{ pt: 8, pb: 6,}}
             > <Container maxWidth="sm">
             <Typography
               component="h1"
@@ -43,7 +36,7 @@ export default function Home () {
               color="text.primary"
               gutterBottom
             >
-              Welcome back Administrator
+              Welcome
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               Good Car for Good Moments
@@ -54,8 +47,8 @@ export default function Home () {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained"sx={{ bgcolor: '#002884' }} >Import new car</Button>
-              <Button variant="outlined" >Update warehouse</Button>
+              <Button onClick={goToAddPage} variant="contained"sx={{ bgcolor: '#002884' }} >Order new car</Button>
+              <Button variant="contained" > <ConstructionIcon/>Schedule  repair</Button>
             </Stack>
             
           </Container>
@@ -63,22 +56,9 @@ export default function Home () {
               <Cars />
           </Grid>
           {/* Footer */}
-          <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
-            <Typography variant="h6" align="center" gutterBottom>
-              Footer
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              align="center"
-              color="text.secondary"
-              component="p"
-            >
-              Something here to give the footer a purpose!
-            </Typography>
-            <Copyright />
-          </Box>
+          
           {/* End footer */}
-        </ThemeProvider>
+        </ThemeProvider></Layout>
       );
 }
 

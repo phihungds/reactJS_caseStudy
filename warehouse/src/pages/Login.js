@@ -35,7 +35,7 @@ function Login() {
         errors.email = "Email is not correct.";
         errors.emailCheck = true
       }
-      
+
     }
     else {
       errors.email = "Invalid Email"
@@ -45,7 +45,7 @@ function Login() {
       errors.password = "Your password is not correct"
       errors.passCheck = true
     }
-    
+
     return errors
   }
 
@@ -71,7 +71,7 @@ function Login() {
           backgroundColor: 'rgba(0,0,0,0)'
         }}>
           <Box
-            sx={{ my: 8, mx: 4, display: 'flex', flexDirection: 'column',alignItems: 'center'}}
+            sx={{ my: 8, mx: 4, display: 'flex', flexDirection: 'column', alignItems: 'center' }}
           ><h1>House of Cars</h1>
 
             <Avatar sx={{ m: 1, bgcolor: '#002884', width: 70, height: 70 }}>
@@ -86,7 +86,7 @@ function Login() {
               onSubmit={handleSubmit}>
 
               {({ errors, handleSubmit }) => (
-                <Form  onSubmit={handleSubmit} >
+                <Form onSubmit={handleSubmit} >
 
                   <CssTextField
                     margin="normal"
@@ -100,6 +100,9 @@ function Login() {
                     error={errors.emailCheck}
                     helperText={errors.email}
                     onChange={handleChange}
+                    InputLabelProps={{
+                      style: { color: 'white' },
+                    }}
 
                   />
                   <CssTextField
@@ -114,6 +117,9 @@ function Login() {
                     error={errors.passCheck}
                     helperText={errors.password}
                     onChange={handleChange}
+                    InputLabelProps={{
+                      style: { color: 'white' },
+                    }}
                   />
                   <FormControlLabel
                     control={<Checkbox value="remember" color="primary" sx={{ color: 'white' }} />}
